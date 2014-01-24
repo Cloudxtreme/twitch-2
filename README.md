@@ -3,7 +3,7 @@ twitch coding challenge
 INSTALL DETAILS
 ------
 To run SpellChecker "java -jar SpellChecker/SpellChecker.jar"
-To pipe test output to SpellChecker run "java -jar Tester/Tester.jar | java -jar SpellChecker/SpellChecker.jar"
+To pipe test output to SpellChecker run "java -jar Tester/Tester.jar | java -jar SpellChecker/SpellChecker.jar | grep "NO SUGGESTION""
 
 Approach
 -------
