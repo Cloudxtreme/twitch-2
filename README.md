@@ -12,4 +12,4 @@ I start by precomputing a prefix tree with the dictionary provided. Because this
 
 Then I can search this prefix tree for words that I input in my SpellChecker file by doing a simple DFS. Because this techinique prunes the search space by not continuing the search prefixes that do not exist in the tree it is much faster than computing all possible solutions and looking each one up in the dictionary.
 
-The runtime of looking a word up in the dictionary obviously will depend on the number of repeated blocks in the word. (IE aboooooouuuuu will take much longer than abcdefgihjklmn because of the repeats). However, if on average there are 2 possible repeats then the runtime should be O(2^m) where m is the length of the word.
+The runtime of looking a word up in the dictionary obviously will depend on the number of repeated blocks in the word. (IE aboooooouuuuu will take much longer than abcdefgihjklmn because of the repeats). However, if on average there are 2 possible repeats then the runtime should be O(2^m) where m is the number of "blocks" in the word. For example aabbccdee has 5 blocks.
